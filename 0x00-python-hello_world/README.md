@@ -11,3 +11,4 @@
 8. Create a new sentence
 9. Easter Egg
 11. Hello, write
+12. Compile
