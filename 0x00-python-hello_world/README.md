@@ -10,3 +10,4 @@
 7. Copy - Cut - Paste
 8. Create a new sentence
 9. Easter Egg
+11. Hello, write
