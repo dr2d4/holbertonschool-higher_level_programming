@@ -6,7 +6,7 @@
  *
  * Return: last node
  */
-listint_t* get_last(listint_t *head)
+listint_t *get_last(listint_t *head)
 {
 	listint_t *tmp = head;
 	void *prev = NULL;
@@ -40,14 +40,13 @@ int is_palindrome(listint_t **head)
 
 	while (tmp && last)
 	{
-		// if (last->prev == tmp->next->prev)
-		//	break;
+		/* if (last->prev == tmp->next->prev) */
+		/*	break; */
 
-		if(last->n != tmp->n)
+		if (last->n != tmp->n)
 			return (0);
 
-		// printf("%d %d\n", last->n, tmp->n);
-
+		/* printf("%d %d\n", last->n, tmp->n); */
 		last = last->prev;
 		tmp = tmp->next;
 	}
