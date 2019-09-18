@@ -2,10 +2,13 @@
 
 
 def add_tuple(tuple_a=(), tuple_b=()):
-    a = *tuple_a, 0, 0
-    b = *tuple_b, 0, 0
+	a = list(tuple_a)
+	b = list(tuple_b)
 
-    s1 = a[0] + b[0]
-    s2 = a[1] + b[1]
+	for x in range(len(a), 2):
+		a.append(0)
 
-    return (s1, s2)
+	for x in range(len(b), 2):
+		b.append(0)
+
+	return (a[0] + b[0], a[1] + b[1])
