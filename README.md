@@ -9,3 +9,7 @@
 # 0x02. Python - import & modules
 
 0x02-python-import_modules
+
+# 0x03. Python - Data Structures: Lists, Tuples
+
+0x03-python-data_structures
