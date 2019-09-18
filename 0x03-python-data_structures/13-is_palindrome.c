@@ -35,20 +35,23 @@ listint_t *get_last(listint_t *head)
  */
 int is_palindrome(listint_t **head)
 {
-	listint_t *last = get_last(*head);
-	listint_t *tmp = *head;
-
-	while (tmp && last)
+	if (!head && *head)
 	{
-		/* if (last->prev == tmp->next->prev) */
-		/*	break; */
+		listint_t *last = get_last(*head);
+		listint_t *tmp = *head;
 
-		if (last->n != tmp->n)
-			return (0);
+		while (tmp && last)
+		{
+			/* if (last->prev == tmp->next->prev) */
+			/*	break; */
 
-		/* printf("%d %d\n", last->n, tmp->n); */
-		last = last->prev;
-		tmp = tmp->next;
+			if (last->n != tmp->n)
+				return (0);
+
+			/* printf("%d %d\n", last->n, tmp->n); */
+			last = last->prev;
+			tmp = tmp->next;
+		}
 	}
 
 	return (1);
