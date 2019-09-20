@@ -14,3 +14,4 @@
 11. Multiply by using map
 12. Roman to Integer
 13. Weighted average!
+14. Squared by using map
