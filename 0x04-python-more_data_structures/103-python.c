@@ -1,4 +1,5 @@
 #include <Python.h>
+#include <stdio.h>
 /**
  * print_python_bytes - prints some basic info about Python bytes type
  * @p: bytes object
