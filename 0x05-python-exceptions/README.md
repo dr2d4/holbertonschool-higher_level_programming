@@ -9,3 +9,4 @@
 6. Raise a message [mandatory]
 
 7. Safe integer print with error message [#advanced]
+8. Safe function [#advanced]
