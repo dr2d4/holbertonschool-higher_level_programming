@@ -21,3 +21,7 @@
 # 0x05. Python - Exceptions
 
 0x05-python-exceptions
+
+# 0x06. Python - Classes and Objects
+
+0x06-python-classes
