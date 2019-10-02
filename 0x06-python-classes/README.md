@@ -5,3 +5,4 @@
 2. Size validation [mandatory]
 3. Area of a square [mandatory]
 4. Access and update private attribute mandatory [mandatory]
+5. Printing a square [mandatory]
