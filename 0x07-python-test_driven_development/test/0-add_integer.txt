@@ -2,6 +2,8 @@ Python 3.4.9 (default, Sep 13 2019, 12:44:28)
 [GCC 9.1.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> add_integer = __import__('0-add_integer').add_integer
+>>> isinstance(add_integer.__doc__, str)
+True
 >>> print(add_integer(1, 2))
 3
 >>> print(add_integer(100, -2))
