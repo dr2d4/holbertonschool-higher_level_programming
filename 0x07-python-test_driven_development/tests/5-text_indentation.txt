@@ -1,0 +1,13 @@
+Python 3.4.9 (default, Sep 13 2019, 12:44:28) 
+[GCC 9.1.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation('Lorem ipsum dolor sit amet, consectetur adipiscing elit. ')
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<BLANKLINE>
+>>> text_indentation(None)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/dr2d4/Documentos/git/holbertonschool-higher_level_programming/0x07-python-test_driven_development/5-text_indentation.py", line 22, in text_indentation
+    raise TypeError("text must be a string")
+TypeError: text must be a string
