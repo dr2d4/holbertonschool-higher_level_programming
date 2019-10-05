@@ -33,7 +33,7 @@ def matrix_divided(matrix, div):
         raise TypeError(errors[0])
 
     # Check if all items of a list are (int / float)
-    are_numbers = map(lambda y: list(map(lambda x: isinstance(x, (int, float)), y)), matrix)
+    are_numbers = map(lambda y: list(map(lambda x: isinstance(x, (int, float, bool)), y)), matrix)
     are_numbers = all(map(lambda x: all(x), are_numbers))
     if not are_numbers:
         raise TypeError(errors[0])
@@ -45,11 +45,11 @@ def matrix_divided(matrix, div):
         raise TypeError(errors[1])
 
     # Check if "div" is not a (int / float) or div is 0
-    if not isinstance(div, (int, float)) or div == 0:
+    if not isinstance(div, (int, float, bool)) or div == 0:
         if not div:
             raise ZeroDivisionError('division by zero')
 
         raise TypeError('div must be a number')
 
-    new_matrix = map(lambda y: list(map(lambda x: round(x / div, 2), y)), matrix)
+    new_matrix = map(lambda y: list(map(lambda x: round(int(x) / int(div), 2), y)), matrix)
     return list(new_matrix)
