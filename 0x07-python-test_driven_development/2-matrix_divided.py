@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 """
-Divides all elements of a matrix [[(int / float),*],*]
+Divides all elements of a matrix [[(int / float), *], *]
 """
 
 
 def matrix_divided(matrix, div):
     """
-    Divides all elements of a matrix [[(int / float),*],*]
+    Divides all elements of a matrix [[(int / float), *], *]
 
     Parameters:
-        :param matrix: [[(int / float),*],*]
+        :param matrix: [[(int / float), *], *]
         :param div: (int / float)
 
     Raises:
