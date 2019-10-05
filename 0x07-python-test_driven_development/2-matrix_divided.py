@@ -28,13 +28,6 @@ def matrix_divided(matrix, div):
         'Each row of the matrix must have the same size',
     ]
 
-    # Check if "div" is not a (int / float) or div is 0
-    if not isinstance(div, (int, float)) or div == 0:
-        if not div:
-            raise ZeroDivisionError('division by zero')
-
-        raise TypeError('div must be a number')
-
     # Check if matrix is not list of lists
     if not isinstance(matrix, list) or not all(isinstance(l, list) for l in matrix):
         raise TypeError(errors[0])
@@ -50,6 +43,13 @@ def matrix_divided(matrix, div):
     success_len = len(matrix) * len(matrix[0])
     if list_len != success_len:
         raise TypeError(errors[1])
+
+    # Check if "div" is not a (int / float) or div is 0
+    if not isinstance(div, (int, float)) or div == 0:
+        if not div:
+            raise ZeroDivisionError('division by zero')
+
+        raise TypeError('div must be a number')
 
     new_matrix = map(lambda y: list(map(lambda x: round(x / div, 2), y)), matrix)
     return list(new_matrix)
