@@ -29,3 +29,7 @@
 # 0x07. Python - Test-driven development
 
 0x07-python-test_driven_development
+
+# 0x08. Python - More Classes and Objects
+
+0x08-python-more_classes
