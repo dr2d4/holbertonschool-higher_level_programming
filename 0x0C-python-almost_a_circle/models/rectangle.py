@@ -135,6 +135,10 @@ class Rectangle(Base):
             pass
 
     def to_dictionary(self):
+        """
+        Return dictionary as representation of allí attributes of a triangle
+        """
+
         dictionary = {'id': self.id, 'width': self.__width,
                       'height': self.__height, 'x': self.__x, 'y': self.__y}
 
