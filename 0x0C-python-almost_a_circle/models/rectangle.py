@@ -135,7 +135,8 @@ class Rectangle(Base):
             pass
 
     def to_dictionary(self):
-        """ Retiran dictionary of the object """
+        """ Return dictionary of the object """
+
         dictionary = {'id': self.id, 'width': self.__width,
                       'height': self.__height, 'x': self.__x, 'y': self.__y}
 
