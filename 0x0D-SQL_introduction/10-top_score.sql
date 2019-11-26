@@ -1,1 +1,2 @@
-select score, name from second_table order by score desc;
+-- order all rows by score
+SELECT score, name FROM second_table ORDER BY score DESC;

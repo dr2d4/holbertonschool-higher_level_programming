@@ -1,1 +1,2 @@
-select count(*) from first_table where id=89;
+-- Count rows in first_table
+SELECT COUNT(*) FROM first_table WHERE id=89;

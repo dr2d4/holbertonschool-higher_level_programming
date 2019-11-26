@@ -1,1 +1,2 @@
-select score, count(*) as number from second_table group by score order by score desc;
+-- Select - count, group and sort desc
+SELECT score, count(*) AS number FROM second_table GROUP BY score ORDER BY score DESC;
