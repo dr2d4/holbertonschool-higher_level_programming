@@ -1,1 +1,2 @@
-show create table first_table;
+-- Display create table sql command
+SHOW CREATE TABLE first_table;
