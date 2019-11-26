@@ -1,1 +1,2 @@
-drop database hbtn_0c_0;
+-- Delete database hbtn_0c_0
+DROPT DATABASE hbtn_0c_0;
