@@ -1,16 +1,12 @@
 #!/usr/bin/python3
 """
-    Function that finds a peak in a list of unsorted integers.
+    Search pick in a list
 """
-
 
 
 def find_peak(list_of_integers):
     """
-        function that finds a peak in a list of unsorted integers.
+        Search pick in a list
     """
-    lista = sorted(list_of_integers)
-
-
-    if lista:
-        return lista[-1]
+    if list_of_integers:
+        return max(list_of_integers)

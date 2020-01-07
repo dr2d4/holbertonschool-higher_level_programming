@@ -1,3 +1,3 @@
 #!/bin/bash
 # Displays size of the download file
-curl -w '%{size_download}\n' -s $1
+curl -sI "$1" | grep "Content-Length" | cut -d' ' -f 2
