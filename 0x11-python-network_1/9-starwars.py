@@ -10,7 +10,7 @@ def searchapi():
     """
         Get list people
     """
-    seach = {"search": sys.argv[1]}
+    search = {"search": sys.argv[1]}
     result = requests.get("https://swapi.co/api/people", params=search)
 
     try:
