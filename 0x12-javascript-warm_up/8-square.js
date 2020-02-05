@@ -9,7 +9,7 @@ if (!n) {
     let line = '';
 
     for (let j = 0; j < n; j++) {
-      line += 'x';
+      line += 'X';
     }
 
     console.log(line);
