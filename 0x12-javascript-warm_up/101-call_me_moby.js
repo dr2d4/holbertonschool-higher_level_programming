@@ -1,5 +1,5 @@
 #!/usr/bin/node
-exports.add = function callMeMoby(n, f) {
+exports.callMeMoby = function (n, f) {
   for (let i = 0; i < n; i++)
   {
     f();
