@@ -9,17 +9,17 @@ module.exports = class Rectangle {
     }
   }
 
-  print() {
+  print () {
     for (let i = 0; i < this.height; i++) {
       console.log('X'.repeat(this.width));
     }
   }
 
-  rotate() {
+  rotate () {
     this.width = [this.height, this.height = this.width][0];
   }
 
-  double() {
+  double () {
     this.height *= 2;
     this.width *= 2;
   }
